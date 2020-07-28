@@ -1,0 +1,228 @@
+body{
+    background: url('bg1.jpg') no-repeat;
+}
+*{
+    margin: o;
+    padding: 0;
+}
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    position: relative;
+}
+.logo{
+    margin: 18px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin: 10px 30px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: 1.33em;
+
+}
+.navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.h-primary{
+    font-size: 2.8rem;
+    color: white;
+}
+.para{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    margin: 10px auto;
+}
+
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(bg.jpg);
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box form{
+    font-size: 1.3rem;
+    color: white;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    padding-bottom: 22px;
+    border-radius: 10px;
+}
+
+footer{
+    color: white;
+    margin: 500px;
+}
+
+/* login page */
+
+.main {
+   
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    padding-top: 40px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    margin-top: 200px;
+}
+
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 130%;
+font-size: 1.7rem;
+letter-spacing: 1px;
+background: whitesmoke;
+padding: 10px 20px;
+border-radius: 20px;
+box-sizing: border-box;
+border: 2px solid gainsboro;
+margin: 20px;
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+
+
+.un:focus, .pass:focus {
+    border: 2px solid gainsboro !important;
+    
+}
+
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: black;
+    background-color: white ;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 20px;
+    font-size: 130%;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    padding-top: 15px;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    text-decoration: none;
+    align-items: center;
+}
+
+/* sign up page */
+
+.sign_up {
+    padding-top: 40px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    margin-top: 400px;
+}
+
+.btn1{
+    background-color: rgb(79, 79, 216);
+    border-radius: 20px;
+    color: rgb(151, 130, 130);
+    padding: 10px ;
+    width: 38%;
+    font-size: 130%;
+    margin-bottom: 20px;
+}
+.btn2{
+    background-color: white;
+    border-radius: 20px;
+    color: red;
+    padding: 10px;
+    width: 38%;
+    font-size: 130%;
+    margin-bottom: 20px;
+}
