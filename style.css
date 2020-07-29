@@ -1,147 +1,149 @@
-body{
-    background: url('bg1.jpg') no-repeat;
-}
+/* css reset  */
+
 *{
-    margin: o;
+    margin: 0;
     padding: 0;
+    font-family: 'Ranchers', cursive;
 }
-/* Navigation Bar */
-.navbar{
+
+
+/* css variable  */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar  */
+
+#navbar{
     display: flex;
     align-items: center;
 }
-.navbar{
+
+/* logo and image  */
+
+#logo{
+    margin: 10px 15px;
+}
+
+#logo img{
+    height: 124px;
+    margin: 10px;
+}
+
+/* list styling */
+
+#navbar{
     position: relative;
 }
-.logo{
-    margin: 18px;
-}
-.logo img{
-    width: 100px;
-    height: 100px;
-    margin: 10px 30px;
-}
-.navbar ul{
+
+#navbar ul{
     display: flex;
 }
-.navbar::before{
+
+#navbar::before{
     content: "";
-    position: absolute;
     background-color: black;
+    position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.5;
-}
+    opacity: 0.4;
 
-.navbar ul li{
+}
+#navbar ul li{
+    
     list-style: none;
-    font-size: 1.33em;
-
+    font-size: 1.5rem;
 }
-.navbar ul li a{
-    display: block;
-    padding: 3px 22px;
+
+#navbar ul li a{
+    padding: 4px 10px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
-}
-.navbar ul li a:hover{
-    color: black;
-    background-color: white;
+    margin: 10px 20px;
 }
 
-/* Home section */
+#navbar ul li a:hover{
+    background-color: white;
+    color: red;
+}
+
+/* Home Section  */
+
 #home{
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
+    padding: 2.5% 10%;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 200px;
 }
-.h-primary{
-    font-size: 2.8rem;
+#home::before{
+    content: "";
+    background: url('bg2.jpg') no-repeat center center/cover; 
+    position: absolute;
+    height: 300%;
+    width: 200%;
+    z-index: -1;
+    opacity: 0.8;
+   
+}
+
+#home h1{
     color: white;
+    text-align: center;
 }
 .para{
-    font-size: 1.2rem;
     color: white;
     text-align: center;
+    font-size: 1.5rem;
+}
+
+/* utility classe */
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 5%;
 }
 .btn{
-    padding: 6px 20px;
-    border: 2px solid white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
     background-color: black;
     color: white;
-    border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+.btn a:hover{
     cursor: pointer;
-}
-.center{
-    text-align: center;
-}
-.h-secondary{
-    font-size: 2.8rem;
-    padding: 12px;
-}
-
-.btn{
-    margin: 10px auto;
+    text-decoration: none;
+    color: red;
+    
 }
 
 
-/* contact section */
-#contact{
-    position: relative;
-}
-#contact::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.4;
-    background: url(bg.jpg);
-}
-#contact-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#contact-box form{
-    font-size: 1.3rem;
-    color: white;
-}
-#contact-box input,#contact-box textarea{
-    width: 100%;
-    padding: 0.5rem;
-    padding-bottom: 22px;
-    border-radius: 10px;
-}
-
-footer{
-    color: white;
-    margin: 500px;
-}
-
-/* login page */
-
+/* sign in page  */
 .main {
    
     width: auto;
     height: auto;
-    margin: 20px auto;
+   justify-content: center;
+   text-align: center;
     border-radius: 1.5em;
     box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
 }
 
 .sign {
-    padding-top: 40px;
+   
     color: white;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 2.2rem;
     margin-top: 200px;
 }
 
@@ -178,7 +180,7 @@ form.form1 {
     color: black;
     background-color: white ;
     padding: 5px;
-    font-family: 'Ubuntu', sans-serif;
+   
     margin: 20px;
     font-size: 130%;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
@@ -186,28 +188,16 @@ form.form1 {
 
 .forgot {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
+    color: white;
     padding-top: 15px;
 }
 
 a {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
+    color: red;
     text-decoration: none;
     align-items: center;
 }
-
-/* sign up page */
-
-.sign_up {
-    padding-top: 40px;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 200%;
-    margin-top: 400px;
-}
-
 .btn1{
     background-color: rgb(79, 79, 216);
     border-radius: 20px;
@@ -225,4 +215,11 @@ a {
     width: 38%;
     font-size: 130%;
     margin-bottom: 20px;
+}
+.sign_up {
+   
+    color: white;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-top: 50%;
 }
