@@ -1,225 +1,48 @@
-/* css reset  */
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Ranchers', cursive;
+/* header */
+.head{
+    background-color: rgb(194, 200, 238) !important;
 }
-
-
-/* css variable  */
-
-:root{
-    --navbar-height: 59px;
-}
-
-/* navigation bar  */
-
-#navbar{
-    display: flex;
-    align-items: center;
-}
-
-/* logo and image  */
-
-#logo{
-    margin: 10px 15px;
-}
-
-#logo img{
-    height: 124px;
-    margin: 10px;
-}
-
-/* list styling */
-
-#navbar{
-    position: relative;
-}
-
-#navbar ul{
-    display: flex;
-}
-
-#navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
-
-}
-#navbar ul li{
-    
-    list-style: none;
-    font-size: 1.5rem;
-}
-
-#navbar ul li a{
-    padding: 4px 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: white;
-    margin: 10px 20px;
-}
-
-#navbar ul li a:hover{
-    background-color: white;
-    color: red;
-}
-
-/* Home Section  */
-
-#home{
-    display: flex;
-    flex-direction: column;
-    padding: 2.5% 10%;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
-#home::before{
-    content: "";
-    background: url('bg2.jpg') no-repeat center center/cover; 
-    position: absolute;
-    height: 300%;
-    width: 200%;
-    z-index: -1;
-    opacity: 0.8;
-   
-}
-
-#home h1{
-    color: white;
-    text-align: center;
-}
-.para{
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-/* utility classe */
-
-.h-primary{
-    font-size: 2.8rem;
-    padding: 5%;
-}
-.btn{
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
-    
-}
+/* for all pages */
 .btn a{
-    color: white;
+    color: black;
+  
     text-decoration: none;
+    margin: auto;
+    font-size: 1rem;
+    
 }
 .btn a:hover{
-    cursor: pointer;
-    text-decoration: none;
-    color: red;
     
-}
-
-
-/* sign in page  */
-.main {
-   
-    width: auto;
-    height: auto;
-   justify-content: center;
-   text-align: center;
-    border-radius: 1.5em;
-    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
-}
-
-.sign {
-   
-    color: white;
-    font-weight: bold;
-    font-size: 2.2rem;
-    margin-top: 200px;
-}
-
-.un {
-width: 76%;
-color: rgb(38, 50, 56);
-font-weight: 130%;
-font-size: 1.7rem;
-letter-spacing: 1px;
-background: whitesmoke;
-padding: 10px 20px;
-border-radius: 20px;
-box-sizing: border-box;
-border: 2px solid gainsboro;
-margin: 20px;
-text-align: center;
-font-family: 'Ubuntu', sans-serif;
-}
-
-form.form1 {
-    padding-top: 40px;
-}
-
-
-
-.un:focus, .pass:focus {
-    border: 2px solid gainsboro !important;
-    
-}
-
-.submit {
-  cursor: pointer;
-    border-radius: 5em;
-    color: black;
-    background-color: white ;
-    padding: 5px;
-   
-    margin: 20px;
-    font-size: 130%;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
-}
-
-.forgot {
-    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: white;
-    padding-top: 15px;
-}
-
-a {
-    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
     color: red;
     text-decoration: none;
-    align-items: center;
-}
-.btn1{
-    background-color: rgb(79, 79, 216);
-    border-radius: 20px;
-    color: rgb(151, 130, 130);
-    padding: 10px ;
-    width: 38%;
-    font-size: 130%;
-    margin-bottom: 20px;
-}
-.btn2{
-    background-color: white;
-    border-radius: 20px;
-    color: red;
-    padding: 10px;
-    width: 38%;
-    font-size: 130%;
-    margin-bottom: 20px;
-}
-.sign_up {
    
-    color: white;
-    font-weight: bold;
-    font-size: 2.2rem;
-    margin-top: 50%;
 }
+
+.btn{
+    width:200px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin:20px auto;
+}
+
+p{
+    color: white;
+}
+
+.center{
+    margin: auto;
+}
+/* background image */
+
+.bg-image{
+    background-image: url(bg2.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+.foot{
+    background-color: rgb(194, 200, 238) !important;
+}
+
